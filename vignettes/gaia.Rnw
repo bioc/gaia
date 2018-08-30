@@ -36,8 +36,9 @@ GAIA algorithm is carefully described in \cite{Morganella_2011}.
 Install GAIA on your computer by using the following command:
 
 \begin{verbatim}
-source("http://bioconductor.org/biocLite.R")
-biocLite("gaia")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("gaia")
 \end{verbatim}
 
 GAIA package can be loaded in R by using the following command:
@@ -50,8 +51,9 @@ In order to use GAIA you need of the R package {\ttfamily qvalue} available at t
 Note that by using the installation command {\ttfamily biocLite} the {\ttfamily qvalue} dependency is automatically fulfilled. In contrast if GAIA has been manually installed (e.g. using {\ttfamily R CMD INSTALL} command) you can install {\ttfamily qvalue} package by the following command:
 
 \begin{verbatim}
-source("http://bioconductor.org/biocLite.R")
-biocLite("qvalue")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("qvalue")
 \end{verbatim}
 
 \section{Vega Data Description}

@@ -34,7 +34,7 @@ Maintainer: S. Morganella <morganellaalx@gmail.com>
 In order to execute this script you need of the R package \code{qvalue} available at the bioconductor repository.\cr
 To install the \code{qvalue} package, start R and enter:\cr
 source("http://bioconductor.org/biocLite.R")\cr
-biocLite("qvalue")
+BiocManager::install("qvalue")
 }
 
 %\seealso{ ~~objects to See Also as \code{\link{help}}, ~~~ }

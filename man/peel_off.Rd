@@ -12,5 +12,5 @@ Maintainer: S. Morganella <morganellaalx@gmail.com>
 This function uses the R package \code{qvalue} available at the bioconductor repository.\cr
 To install the \code{qvalue} package, start R and enter:\cr
 source("http://bioconductor.org/biocLite.R")\cr
-biocLite("qvalue")
+BiocManager::install("qvalue")
 }
