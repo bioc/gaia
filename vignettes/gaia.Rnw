@@ -48,7 +48,7 @@ library(gaia)
 
 \section{Package Dependencies}
 In order to use GAIA you need of the R package {\ttfamily qvalue} available at the bioconductor repository.\\
-Note that by using the installation command {\ttfamily biocLite} the {\ttfamily qvalue} dependency is automatically fulfilled. In contrast if GAIA has been manually installed (e.g. using {\ttfamily R CMD INSTALL} command) you can install {\ttfamily qvalue} package by the following command:
+Note that by using the installation command {\ttfamily BiocManager::install} the {\ttfamily qvalue} dependency is automatically fulfilled. In contrast if GAIA has been manually installed (e.g. using {\ttfamily R CMD INSTALL} command) you can install {\ttfamily qvalue} package by the following command:
 
 \begin{verbatim}
 if (!requireNamespace("BiocManager", quietly=TRUE))
